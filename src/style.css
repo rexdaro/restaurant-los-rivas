@@ -1,11 +1,11 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #21222e;
-  margin: 0;
-  padding: 20px;
-  display: flex;  
-  height: 230vh;
-  z-index: 0;
+    background-color: #ffffff;
+    margin: 0;
+    scroll-behavior: smooth;
+    display: flex;
+    z-index: 0;
+    flex-direction: column;
 }
 
 .container-principal{
@@ -25,6 +25,7 @@ body {
   z-index: 3;
   left: 0;
   height: 4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .container-img-menu{
@@ -143,4 +144,185 @@ body {
   width: 80%;
   text-align: center;
   margin: 0;
+}
+
+.div-menu-de-comida{
+  background-color: #006168;
+  margin-top: 4rem;
+  color: white;
+  height: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.div-p{
+  padding: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+.cuadricula-comidas{
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta-comida{
+  
+  width: 40%;  
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+  font-weight: 900;
+}
+
+.img-comida{
+  
+  height: 6rem;
+  
+}
+
+.div-p-confondo {
+  position: relative;
+  overflow: hidden;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin: 4rem 0 0 0;
+}
+
+.div-p-confondo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('/public/images/banner1.png');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.4);
+  z-index: 0;
+}
+
+.div-p-confondo p {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+  z-index: 1;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.div-p-confondo .p-titulo{
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 0;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.div-p-confondo .div-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  z-index: 1;
+  position: relative;
+  
+}
+
+.div-p-confondo .div-input input{
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  margin: 1rem;
+}
+
+.div-p-confondo .div-input button{
+  background-color: #006168;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 1rem 0 0;
+}
+
+.tabla-horarios {
+  width: 100%;
+  border-collapse: collapse;
+  
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+}
+
+.tabla-horarios th {
+  background-color: #006168;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.tabla-horarios td {
+  padding: 10px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.fila-par {
+  background-color: #f2f2f2;
+}
+
+.footer {
+  background-color: #006168;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+.btn-ordenar {
+  background-color: white;
+  color: #006168;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ordenar:hover {
+  background-color: #e0e0e0;
+}
+
+
+#ubicaciones,
+#link-menu,
+#horarios,
+#link-reservas {
+  scroll-margin-top: 6rem; /* ajustá este valor según la altura de tu navbar */
 }

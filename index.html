@@ -27,16 +27,16 @@
               <a href="#">Inicio</a>
             </div>
             <div class="menu-item">
-              <a href="#">Menu</a>
+              <a href="#link-menu">Menu</a>
             </div>
             <div class="menu-item">
-              <a href="#">Ubicaciones</a>
+              <a href="#ubicaciones">Ubicaciones</a>
             </div>
             <div class="menu-item">
-              <a href="#">Horarios</a>
+              <a href="#horarios">Horarios</a>
             </div>
             <div class="menu-item" id="reservas">
-              <a href="#">Reservas</a>
+              <a href="#link-reservas">Reservas</a>
             </div>
 
             <div class="menu-item" id="ordenar">
@@ -55,18 +55,156 @@
     
     
         </div>
-    
+        
+
+        
       </div>
 
+
+    <div class="div-menu-de-comida">
+      <h2>MENU</h2>
+    </div>
+
+
+    <div class="div-p">
+      <p>En Los Rivas, compartimos la pasión por la comida con nuestros fans,
+         por eso nunca nos conformamos. Ingredientes frescos,
+          preparados a mano, que satisfacen tus antojos.</p>
+    </div>
+
+    <div class="cuadricula-comidas" id="link-menu">
+
+      <div class="tarjeta-comida">
+        <div class="container-img">
+          <img class="img-comida" src="/public/images/cheeseburger-svgrepo-com.svg" alt="Food Image" />
+        </div>
+        <h3>HAMBURGUESAS</h3>
+      </div>
+
+      <div class="tarjeta-comida">
+        <div class="container-img">
+          <img class="img-comida" src="/public/images/bebidas.svg" alt="Food Image" />
+        </div>
+        <h3>BEBIDAS</h3>
+      </div>
+
+      <div class="tarjeta-comida">
+        <div class="container-img">
+          <img class="img-comida" src="/public/images/papas.svg" alt="Food Image" />
+        </div>
+        <h3>PAPAS</h3>
+      </div>
+
+      <div class="tarjeta-comida">
+        <div class="container-img">
+          <img class="img-comida" src="/public/images/pollo.svg" alt="Food Image" />
+        </div>
+        <h3>POLLO</h3>
+      </div>
+
+      <div class="tarjeta-comida">
+        <div class="container-img">
+          <img class="img-comida" src="/public/images/postres.svg" alt="Food Image" />
+        </div>
+        <h3>POSTRES</h3>
+      </div>
+
+      <div class="tarjeta-comida">
+        <div class="container-img">
+          <img class="img-comida" src="/public/images/ramen.svg" alt="Food Image" />
+        </div>
+        <h3>RAMEN</h3>
+      </div>
+
+      <div class="tarjeta-comida">
+        <div class="container-img">
+          <img class="img-comida" src="/public/images/sandwich.svg" alt="Food Image" />
+        </div>
+        <h3>SANDWICHES</h3>
+      </div>
+
+    </div>
+
+    <div class="div-menu-de-comida" id="ubicaciones">
+      <h2>UBICACIONES</h2>
+    </div>
+
+    <div class="div-p-confondo">
+
+      <p class="p-titulo">RESTAURANTES LOS RIVAS</p>
+
+      <p>Encuentra la ubicación más cercana y disfruta de la mejor comida en el restaurant Los Rivas.</p>
+    
+      <div class="div-input">
+        <input type="text" id="search" placeholder="Buscar ubicación..." />
+        <button id="search-button">Buscar</button>
+
+        
+      </div>
+    </div>
+
+    <div class="div-menu-de-comida" id="horarios">
+      <h2>HORARIOS</h2>
+    </div>
+
     
 
+    <table class="tabla-horarios">
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Apertura</th>
+          <th>Cierre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>12:00</td>
+          <td>22:00</td>
+        </tr>
+        <tr class="fila-par">
+          <td>Martes</td>
+          <td>12:00</td>
+          <td>22:00</td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td>12:00</td>
+          <td>22:00</td>
+        </tr>
+        <tr class="fila-par">
+          <td>Jueves</td>
+          <td>12:00</td>
+          <td>22:00</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>12:00</td>
+          <td>00:00</td>
+        </tr>
+        <tr class="fila-par">
+          <td>Sábado</td>
+          <td>10:00</td>
+          <td>00:00</td>
+        </tr>
+        <tr>
+          <td>Domingo</td>
+          <td>10:00</td>
+          <td>18:00</td>
+        </tr>
+      </tbody>
+    </table>
 
 
-
-
-
-
-
+    <footer class="footer" id="link-reservas">
+      <div class="footer-contenido">
+        <p>📞 Reservas: (123) 456-7890</p>
+        <p>Creado por Manuel Rivas</p>
+        <a href="#" class="btn-ordenar">Ordena ahora</a>
+      </div>
+    </footer>
+    
 
 
     <div id="app"></div>
