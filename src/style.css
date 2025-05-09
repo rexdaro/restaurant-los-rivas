@@ -124,7 +124,7 @@ body {
   height: 30px;
 }
 
-#reservas{
+#botonReservas{
   border: 2px solid black;
   border-color: #006168;
 
@@ -136,7 +136,7 @@ body {
   
 }
 
-#ordenar{
+#BotonOrdenar{
   background-color: #006168;
   color: white;
   
