@@ -326,3 +326,18 @@ body {
 #link-reservas {
   scroll-margin-top: 6rem; /* ajustá este valor según la altura de tu navbar */
 }
+
+@media (min-width: 768px) {
+  html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body{
+    max-width: 45rem;
+  }
+  
+
+  
+}
